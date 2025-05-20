@@ -1,5 +1,6 @@
 # Dotfiles Tree
 
+root
 1. .config
     - [btop](/.config/btop/btop.conf)
     - [fastfetch](/.config/fastfetch/config.jsonc)
