@@ -1,0 +1,70 @@
+// Zed settings
+//
+// Zed documentation: https://zed.dev/docs/configuring-zed
+
+{
+    "edit_predictions": {
+        "mode": "subtle",
+        "copilot": {
+            "proxy": null,
+            "proxy_no_verify": null
+        },
+        "enabled_in_text_threads": false
+    },
+    "project_panel": {
+        "dock": "right"
+    },
+    "agent": {
+        "always_allow_tool_actions": true,
+        "default_profile": "write",
+        "dock": "left",
+        "single_file_review": true,
+        "default_model": {
+            "model": "claude-3-5-sonnet-latest",
+            "provider": "zed.dev"
+        },
+        "version": "2"
+    },
+    "autosave_build": true,
+    "autosave_build_delay": 1500,
+    "autosave_build_events": ["build", "debug", "run"],
+    "autosave_build_events_delay": 1500,
+    "autosave_delay": 1500,
+    "autosave_on_focus_change": true,
+    "autosave_on_window_change": true,
+    "base_keymap": "VSCode",
+    "buffer_font": {
+        "fallbacks": ["GeistMono Nerd Font Mono"],
+        "size": 15
+    },
+    "cursor_shape": "bar",
+    "edit_predictions_mode": "subtle",
+    "features": {
+        "copilot": false,
+        "edit_prediction_provider": "zed"
+    },
+    "icon_theme": "Zed (Default)",
+    "lsp": {
+        "clangd": {
+            "binary": {
+                "path": "/usr/bin/clangd",
+                "arguments": []
+            }
+        }
+    },
+    "project_panel_dock": "right",
+    "soft_wrap": "editor_width",
+    "show_copilot_suggestions": false,
+    "tab_size": 4,
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false
+    },
+    "theme": {
+        "dark": "One Dark",
+        "light": "Ayu Light",
+        "mode": "system"
+    },
+    "ui_font_family": "GeistMono Nerd Font",
+    "ui_font_size": 15
+}

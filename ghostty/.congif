@@ -1,0 +1,101 @@
+# This is the configuration file for Ghostty.
+#
+# This template file has been automatically created at the following
+# path since Ghostty couldn't find any existing config files on your system:
+#
+#   /Library/Application Support/com.mitchellh.ghostty/config
+#
+# The template does not set any default options, since Ghostty ships
+# with sensible defaults for all options. Users should only need to set
+# options that they want to change from the default.
+#
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# Additionally, each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+
+# Config syntax crash course
+# ==========================
+# # The config file consists of simple key-value pairs,
+# # separated by equals signs.
+# GeistMono NFM  Julia Mono  IBM Plex Mono  Space Mono  Monaco
+font-family = GeistMono NFM
+font-size = 15
+
+window-title-font-family = GeistMonoNFM-Regular
+
+# window-padding-x = 2,4 will set the left padding to 2 and the right padding to 4.
+window-padding-x = 7
+# window-padding-color =
+
+
+# The initial window size. This size is in terminal grid cells by default.
+# Both values must be set to take effect. If only one value is set, it is ignored.
+window-height= 47
+window-width = 81
+
+#: The starting window position. This position is in pixels and is relative to the
+#: top-left corner of the primary monitor. Both values must be set to take effect.
+#: If only one value is set, it is ignored.
+window-position-x= 0
+window-position-y= 0
+
+#: Whether to enable saving and restoring window state. Window state includes their position, size, tabs, splits, etc. Some window state requires shell integration, such as preserving working directories. See shell-integration for more information.
+# window-save-state = default
+
+
+#: This defaults to false on macOS
+quit-after-last-window-closed = true
+#: The maximum value is 584y 49w 23h 34m 33s 709ms 551µs 615ns
+quit-after-last-window-closed-delay = 69s
+
+#: This only affects the icon that appears in the dock, application switcher, etc.
+#: blueprint, chalkboard, microchip, glass, holographic, paper, retro, xray
+macos-icon = holographic
+
+# All of the configurations behavior adjust various metrics
+# determined by the font. The values can be integers (1, -1, etc.)
+# or a percentage (20%, -15%, etc.). In each case, the values
+# represent the amount to change the original value.
+# adjust-underline-thickness = 1
+
+# THEME i like:
+# dark:  aurora(yellow brazil)  ayu jubi/calamity(chill) djangoSmooth (monogreen)
+#        dracula(candy)  monokai pro/pro machine nocturnal winter(rgb) desert/Earthsong(earthy)
+# light: catppuccin-latte  Horizon(pinky) monokai light sun
+# the bg: coffee_them
+# theme = light:aurora,dark:monokai pro
+theme = aurora
+
+#: #RRGGBB or RRGGBB
+# background =
+# foreground
+# cursor-color =
+split-divider-color = #444
+#: block bar underline block_hollow
+cursor-style = block
+cursor-style-blink = true
+
+mouse-hide-while-typing = true
+
+
+# # Spacing around the equals sign does not matter.
+# # All of these are identical:
+# key=value
+# key= value
+# key =value
+# key = value
+#
+# # Any line beginning with a # is a comment. It's not possible to put
+# # a comment after a config option, since it would be interpreted as a
+# # part of the value. For example, this will have a value of "#123abc":
+# background = #123abc
+#
+# # Empty values are used to reset config keys to default.
+# key =
+#
+# # Some config options have unique syntaxes for their value,
+# # which is explained in the docs for that config option.
+# # Just for example:
+# resize-overlay-duration = 4s 200ms

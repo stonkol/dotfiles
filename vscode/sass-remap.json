@@ -1,0 +1,24 @@
+
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": true,
+    "workbench.preferredHighContrastColorTheme": "Visual Studio 2019 Light",
+    "extensions.ignoreRecommendations": true,
+    "explorer.confirmDragAndDrop": false,
+    "liveSassCompile.settings.formats": [
+    {
+        "format": "expanded",
+        // "extensionName": "min.css",
+        // "savePath": "/css"
+    }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "workbench.colorTheme": "Visual Studio 2019 Dark",
+    "workbench.preferredDarkColorTheme": "Visual Studio 2019 Dark",
+    "workbench.preferredLightColorTheme": "Visual Studio 2019 Light",
+    "liveSassCompile.settings.autoprefix": [],
+    "liveServer.settings.donotShowInfoMsg": true
+}
