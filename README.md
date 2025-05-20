@@ -1,22 +1,22 @@
 # Dotfiles Tree
 
 1. .config
-    - [btop]
-    - [fastfetch](/config/fastfetch/config.jsonc)
-    - [kitty](/config/kitty)
-    - [nvim](/config/nvim)
-    - [shell-scripts](/config/shell_scripts)
-    - [zed](/config/zed)
+    - [btop](/.config/btop/btop.conf)
+    - [fastfetch](/.config/fastfetch/config.jsonc)
+    - [kitty](/.config/kitty)
+    - [nvim](/.config/nvim)
+    - [shell-scripts](/.config/shell_scripts)
+    - [zed](/.config/zed)
 1. [example-shell](/example-shell)
-    - [.bash_profile]
-    - [.bashrc]
+    - [.bash_profile](/shell/.bashrc_profile)
+    - [.bashrc](/shell/.bashrc)
     - [backup.sh](/shell/backup.sh)
     - [pomocalc.sh](/shell/pomocalc.sh)
     - [push.sh](/shell/push.sh)
     - [zet.sh](/shell/zet.sh)
 1. [vscode](/vscode)
-    - [.gitignore]
-    - [.prettierrc](/vscode)
+    - [.gitignore](/vscode/.gitignore)
+    - [.prettierrc](/vscode/.prettierrc)
     - [plugins.md](/vscode/plugins.md)
     - [sass-remap](/vscode/sass-remap.json)
     - [settings.json](/vscode/settings.json)
