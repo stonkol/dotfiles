@@ -23,7 +23,7 @@ root
     - [settings.json](/vscode/settings.json)
     - [shortcuts.sass](/vscode/shortcuts.sass)
 1. .bashrc
-1. .p10k.zsh
-1. .zshrc
-1. .zshrc.save
+1. [.p10k.zsh](/.p10k.zsh)
+1. [.zshrc](/.zshrc)
+1. [.zshenv](/.zshenv)
 1. [dotfile.md](/dotfiles.md)
