@@ -5,12 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-
 ########################## THEME ##########################
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -35,11 +29,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# fuck plugin
-eval $(thefuck --alias)
-
-export PATH="/usr/local/texlive/2023/bin/universal-darwin:$PATH"
-
 ######################### SCRIPTS ###########################
 source ~/.config/shell_scripts/create_zet.sh
 source ~/.config/shell_scripts/create_book_review.sh
@@ -47,19 +36,11 @@ source ~/.config/shell_scripts/create_dairy.sh
 source ~/.config/shell_scripts/create_film_review.sh
 source ~/.config/shell_scripts/create_zet.sh
 
-######################### ALIASES ############################
+######################### ALIASES ###########################
 source ~/.config/shell_scripts/aliases.sh
 
-########################### Go ##############################
-# add the default Go binary directory to your `PATH`
-export PATH="$PATH:$(go env GOPATH)/bin"
-
-# `GOBIN` controls where Go places installed binaries.
-# USAGE: $ export $PATH=$PATH:$GOBIN
-export GOBIN=~/go/bin/
-
 ######################## Python ############################
-source ~/.bash_profile  # or source ~/.zshrc for zsh
+source ~/.zshrc for zsh  # or source ~/.bash_profile
 
 ##################### PROMPT p10k #########################
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -68,31 +49,24 @@ source ~/.bash_profile  # or source ~/.zshrc for zsh
 ######################### CONDA ###########################
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/cees/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/[user_name]/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/cees/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/cees/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/Users/[user_name]/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/[user_name]/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/cees/anaconda3/bin:$PATH"
+        export PATH="/Users/[user_name]/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# color ls config
-source $(dirname $(gem which colorls))/tab_complete.sh
-
 # bun completions
-[ -s "/Users/cees/.bun/_bun" ] && source "/Users/cees/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+[ -s "/Users/[user_name]/.bun/_bun" ] && source "/Users/[user_name]/.bun/_bun"
 
 # pnpm
-export PNPM_HOME="/Users/[user]/Library/pnpm"
+export PNPM_HOME="/Users/[user_name]/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
